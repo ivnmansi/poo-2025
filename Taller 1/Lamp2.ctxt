@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Lamp2
+comment0.text=\n\ Clase\ que\ representa\ una\ l\u00E1mpara.\n\ Cada\ l\u00E1mpara\ tiene\ un\ estado\ (encendida\ o\ apagada)\ y\ un\ interruptor\ individual.\n
+comment1.params=newGeneralSwitch
+comment1.target=Lamp2(GeneralSwitch2)
+comment1.text=\n\ Constructor\ de\ la\ clase\ {@code\ Lamp2}.\n\ Inicializa\ la\ l\u00E1mpara\ como\ apagada\ y\ con\ el\ interruptor\ individual\ apagado.\n
+comment2.params=newState
+comment2.target=void\ setIsOn(state)
+comment2.text=\n\ Establece\ el\ estado\ de\ la\ l\u00E1mpara.\n\n\ @param\ isOn\ El\ nuevo\ estado\ de\ la\ l\u00E1mpara,\ ya\ sea\ {@code\ state.ON}\ o\ {@code\ state.OFF}.\n
+comment3.params=
+comment3.target=boolean\ getLampSwitch()
+comment3.text=\n\ Obtiene\ el\ estado\ del\ interruptor\ individual\ de\ la\ l\u00E1mpara.\n\n\ @return\ {@code\ true}\ si\ el\ interruptor\ est\u00E1\ encendido,\ {@code\ false}\ si\ est\u00E1\ apagado.\n
+comment4.params=
+comment4.target=void\ turnOn()
+comment4.text=\n\ Enciende\ el\ interruptor\ de\ la\ l\u00E1mpara.\n
+comment5.params=
+comment5.target=void\ turnOff()
+comment5.text=\n\ Apaga\ el\ interruptor\ de\ la\ l\u00E1mpara.\n
+numComments=6

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=GeneralSwitch2
+comment0.text=\n\ Clase\ que\ representa\ un\ interruptor\ general.\n\ Implementa\ el\ patr\u00F3n\ Singleton\ para\ garantizar\ que\ solo\ exista\ una\ instancia\ de\ esta\ clase.\n
+comment1.params=
+comment1.target=GeneralSwitch2()
+comment1.text=\n\ Constructor\ privado\ para\ evitar\ la\ creaci\u00F3n\ de\ m\u00FAltiples\ instancias.\n\ Inicializa\ el\ estado\ del\ interruptor\ como\ apagado.\n
+comment2.params=
+comment2.target=GeneralSwitch2\ getInstance()
+comment2.text=\n\ Obtiene\ la\ instancia\ \u00FAnica\ de\ la\ clase.\n\ Si\ no\ existe,\ la\ crea.\n\n\ @return\ La\ instancia\ \u00FAnica\ de\ {@code\ GeneralSwitch2}.\n
+comment3.params=
+comment3.target=boolean\ getSwitchState()
+comment3.text=\n\ Obtiene\ el\ estado\ actual\ del\ interruptor\ general.\n\n\ @return\ {@code\ true}\ si\ el\ interruptor\ est\u00E1\ encendido,\ {@code\ false}\ si\ est\u00E1\ apagado.\n
+comment4.params=
+comment4.target=java.util.ArrayList\ getLamps()
+comment4.text=\n\ Obtiene\ la\ lista\ de\ l\u00E1mparas\ asociadas\ al\ interruptor\ general.\n\n\ @return\ Una\ lista\ de\ objetos\ {@code\ Lamp2}.\n
+comment5.params=
+comment5.target=void\ turnOn()
+comment5.text=\n\ Enciende\ el\ interruptor\ general.\n\ Si\ una\ l\u00E1mpara\ asociada\ tiene\ su\ interruptor\ individual\ encendido,\ tambi\u00E9n\ se\ enciende.\n
+comment6.params=
+comment6.target=void\ turnOff()
+comment6.text=\n\ Apaga\ el\ interruptor\ general.\n\ Todas\ las\ l\u00E1mparas\ asociadas\ se\ apagan\ independientemente\ de\ su\ estado\ individual.\n
+numComments=7
