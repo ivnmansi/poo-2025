@@ -59,27 +59,22 @@ public class GeneralSwitch2
         return lamp;
     }
     
-     /**
-     * Enciende el interruptor general.
-     * Si una lámpara asociada tiene su interruptor individual encendido, también se enciende.
+
+    /**
+     * Método que representa el botón de encendido y apagado del switch general
      */
-    public void turnOn(){
-        this.switchState = true;
+    public void button(){
+        switchState = !switchState;
         for(int i=0;i<lamp.size();i++){
-            if(lamp.get(i).getLampSwitch() == true){
+            if(switchState && lamp.get(i).getLampSwitch()){
                 lamp.get(i).setIsOn(state.ON);
+            }
+            else {
+                lamp.get(i).setIsOn(state.OFF);
             }
         }
     }
-    /**
-     * Apaga el interruptor general.
-     * Todas las lámparas asociadas se apagan independientemente de su estado individual.
-     */
-    public void turnOff(){
-        this.switchState = false;
-        for(int i=0;i<lamp.size();i++){
-            lamp.get(i).setIsOn(state.OFF);
-        }
-    }
-    
+
 }
+
+

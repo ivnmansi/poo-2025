@@ -48,22 +48,18 @@ public class Lamp2
        return lampSwitch;
     }
    
-   /**
-    * Enciende el interruptor de la lámpara.
-    */
-    public void turnOn(){
-       this.lampSwitch = true;
-       if(generalSwitch.getSwitchState()){
-           isOn = state.ON;
-        }
-    }
-    
     /**
-     * Apaga el interruptor de la lámpara.
+     * Función que representa el botón de encendido/apagado de la lampara
      */
-    public void turnOff(){
-       lampSwitch = false;
-       isOn = state.OFF;
+    public void button(){
+      lampSwitch = !lampSwitch;
+      if (lampSwitch && generalSwitch.getSwitchState()){
+         isOn=state.ON;
+      }
+      else {
+         isOn=state.OFF;
+      }
     }
-   
 }
+
+    
