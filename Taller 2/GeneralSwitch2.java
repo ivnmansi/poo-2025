@@ -21,11 +21,17 @@ public class GeneralSwitch2
     private ArrayList<Artefacto> artefacto = new ArrayList<>();
     
     /**
+     * Numero de artefactos conectados
+     */
+    private int numArtefactos;
+    
+    /**
      * Constructor privado para evitar la creación de múltiples instancias.
      * Inicializa el estado del interruptor como apagado.
      */
     private GeneralSwitch2(){
         switchState = false;
+        numArtefactos = 0;
     }
     
     /**
@@ -73,6 +79,14 @@ public class GeneralSwitch2
                 artefacto.get(i).setIsOn(state.OFF);
             }
         }
+    }
+    
+    public int getNumArtefactos(){
+        return numArtefactos;
+    }
+    
+    public void setNumArtefactos(int num){
+        numArtefactos = num;
     }
 
 }

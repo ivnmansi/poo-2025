@@ -38,6 +38,10 @@ public class Artefacto
     public void conectarArtefacto(GeneralSwitch2 newGeneralSwitch){
         generalSwitch = newGeneralSwitch;
         generalSwitch.getLamps().add(this);
+        generalSwitch.setNumArtefactos(generalSwitch.getNumArtefactos() + 1);
+        if(generalSwitch.getSwitchState() && artefactoSwitch){
+            isOn = state.ON;
+        }
     }
     
     /**
@@ -45,7 +49,9 @@ public class Artefacto
      */
     public void desconectarArtefacto(){
         generalSwitch.getLamps().remove(this);
+        generalSwitch.setNumArtefactos(generalSwitch.getNumArtefactos() - 1);
         generalSwitch = null;
+        isOn = state.OFF;
     }
    
     /**
