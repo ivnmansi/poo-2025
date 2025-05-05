@@ -66,10 +66,20 @@ public class Artefacto
        return artefactoSwitch;
     }
    
+    /**
+     * Getter que obtiene el consumo del artefacto
+     * 
+     * @return Consumo del artefacto
+     */
     public int getConsumo(){
         return consumo;
     }
     
+    /**
+     * Setter del consumo. Cambia el consumo de un artefacto.
+     * 
+     * @param newConsumo Consumo que se quiere que el artefacto tenga
+     */
     public void setConsumo(int newConsumo){
         this.consumo = newConsumo;
     }

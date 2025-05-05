@@ -3,4 +3,5 @@ comment0.target=Plancha
 comment0.text=\n\ Write\ a\ description\ of\ class\ Plancha\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=Plancha()
+comment1.text=\n\ Constructor\ de\ la\ clase\ {@code\ Plancha}\n
 numComments=2

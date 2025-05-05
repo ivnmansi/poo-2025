@@ -1,51 +1,54 @@
-Sistema de Iluminación
-======================
-Iván Mansilla
-Ingeniería Civil en Computación e Informática
-Programación Orientada a Objeto
+Sistema de Control de Artefactos
+================================
+Iván Mansilla  
+Ingeniería Civil en Computación e Informática  
+Programación Orientada a Objeto  
 
 Descripción
 -----------
-Este proyecto simula un sistema de iluminación inteligente implementado en Java. El sistema consiste en un interruptor general (GeneralSwitch2) que controla varias lámparas (Lamp2), permitiendo encender o apagar todas las luces desde un punto central, mientras mantiene la funcionalidad de cada interruptor individual.
+Este proyecto simula un sistema de control de artefactos eléctricos implementado en Java. El sistema consiste en un interruptor general (GeneralSwitch2) que controla varios artefactos (Artefacto), como lámparas, televisores y planchas, permitiendo encender o apagar todos los artefactos desde un punto central, mientras mantiene la funcionalidad de cada interruptor individual.
 
 Características principales
---------------------------
-- Interruptor general: Implementado usando el patrón de diseño Singleton
-- Lámparas individuales: Cada lámpara cuenta con su propio interruptor
-- Control centralizado: El interruptor general puede apagar todas las lámparas o encender solo aquellas con interruptores activados
+---------------------------
+- Artefactos individuales: Cada artefacto cuenta con su propio interruptor y consumo eléctrico  
+- Control centralizado: El interruptor general puede apagar todos los artefactos o encender solo aquellos con interruptores individuales activados.   
 
 Estructura del proyecto
-----------------------
-- GeneralSwitch2.java: Implementación del interruptor general (Singleton)
-- Lamp2.java: Implementación de las lámparas individuales
+------------------------
+- GeneralSwitch2.java: Implementación del interruptor general (Singleton).  
+- Artefacto.java: Clase base para todos los artefactos eléctricos (Padre de las clases Lampara, TV y Plancha).
+- Lampara.java: Implementación de una lámpara con consumo de 60 watts (Hereda de Artefacto).  
+- TV.java: Implementación de un televisor con consumo de 300 watts (Hereda de Artefacto). 
+- Plancha.java: Implementación de una plancha con consumo de 1200 watts (Hereda de Artefacto).  
 
 Requisitos
----------
-- BlueJ
-- Java
+----------
+- BlueJ  
+- Java  
 
 Instrucciones de uso en BlueJ
-----------------------------
-Para abrir y ejecutar el proyecto:
-1. Abre BlueJ
-2. Selecciona 'Project → Open...' en el menú superior
-3. Navega hasta la carpeta del proyecto y selecciónala
-4. El diagrama de clases aparecerá en la interfaz de BlueJ
+-----------------------------
+Para abrir y ejecutar el proyecto:  
+1. Abra BlueJ.  
+2. Seleccione 'Project → Open...' en el menú superior.  
+3. Navegue hasta la carpeta del proyecto y selecciónala.  
+4. El diagrama de clases aparecerá en la interfaz de BlueJ.  
 
-Para crear instancias y probar el sistema:
-1. Crear el interruptor general:
-   - Haz clic derecho en la clase GeneralSwitch2
-   - Selecciona el método estático getInstance()
-   - Presionar el botón 'obtener' y escribir un nombre
-   - Este proceso creará una instancia única del interruptor general
+Para crear instancias y probar el sistema:  
+1. Crear el interruptor general:  
+   - Haga clic derecho en la clase 'GeneralSwitch2'.  
+   - Seleccione el método estático 'getInstance()'.  
+   - Este proceso creará una instancia única del interruptor general.  
 
-2. Crear lámparas:
-   - Haz clic derecho en la clase Lamp2
-   - Selecciona 'new Lamp2(...)' y escribe un nombre
-   - Repite este proceso para crear varias lámparas
+2. Crear artefactos:  
+   - Haga clic derecho en las clases `Lampara`, `TV` o `Plancha`.  
+   - Seleccione el constructor correspondiente (`new Lampara()`, `new TV()`, `new Plancha()`) y escriba un nombre.  
+   - Repita este proceso para crear varios artefactos.  
 
-3. Controlar el sistema:
-   - Para encender el interruptor general: Haz clic derecho en la instancia de GeneralSwitch2 y selecciona turnOn()
-   - Para apagar el interruptor general: Selecciona turnOff()
-   - Para activar el interruptor individual de una lámpara: Haz clic derecho en la instancia de la lámpara y selecciona turnOn()
-   - Para desactivar el interruptor individual: Selecciona turnOff()
+3. Conectar artefactos al interruptor general:  
+   - Haga clic derecho en una instancia de artefacto y selecciona `conectarArtefacto(GeneralSwitch2)`.  
+   - Seleccione la instancia del interruptor general creada previamente.  
+
+4. Controlar el sistema:  
+   - Para encender o apagar el interruptor general: Haga clic derecho en la instancia de `GeneralSwitch2` y seleccione `button()`.  
+   - Para activar o desactivar el interruptor individual de un artefacto: Haga clic derecho en la instancia del artefacto y selecciona `button()`.

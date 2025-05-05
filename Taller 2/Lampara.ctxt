@@ -3,4 +3,5 @@ comment0.target=Lampara
 comment0.text=\n\ Write\ a\ description\ of\ class\ Lampara\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=Lampara()
+comment1.text=\n\ Constructor\ de\ la\ clase\ {@code\ Lampara}\n
 numComments=2
