@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Artefacto
+comment0.text=\n\ Clase\ que\ representa\ un\ artefacto.\n\ Cada\ artefacto\ tiene\ un\ estado\ (encendido\ o\ apagado)\ y\ un\ interruptor\ individual.\n
+comment1.params=
+comment1.target=Artefacto()
+comment1.text=\n\ Constructor\ de\ la\ clase\ {@code\ Lamp2}.\n\ Inicializa\ la\ l\u00E1mpara\ como\ apagada\ y\ con\ el\ interruptor\ individual\ apagado.\n
+comment2.params=newGeneralSwitch
+comment2.target=void\ conectarArtefacto(GeneralSwitch2)
+comment2.text=\n\ Metodo\ para\ conectar\ artefacto\ en\ el\ tablero\ general\n
+comment3.params=
+comment3.target=void\ desconectarArtefacto()
+comment3.text=\n\ Metodo\ para\ desconectar\ el\ artefacto\ del\ tablero\ general\n
+comment4.params=newState
+comment4.target=void\ setIsOn(state)
+comment4.text=\n\ Establece\ el\ estado\ de\ la\ l\u00E1mpara.\n\n\ @param\ isOn\ El\ nuevo\ estado\ de\ la\ l\u00E1mpara,\ ya\ sea\ {@code\ state.ON}\ o\ {@code\ state.OFF}.\n
+comment5.params=
+comment5.target=boolean\ getArtefactoSwitch()
+comment5.text=\n\ Obtiene\ el\ estado\ del\ interruptor\ individual\ de\ la\ l\u00E1mpara.\n\n\ @return\ {@code\ true}\ si\ el\ interruptor\ est\u00E1\ encendido,\ {@code\ false}\ si\ est\u00E1\ apagado.\n
+comment6.params=
+comment6.target=int\ getConsumo()
+comment7.params=newConsumo
+comment7.target=void\ setConsumo(int)
+comment8.params=
+comment8.target=void\ button()
+comment8.text=\n\ Funci\u00F3n\ que\ representa\ el\ bot\u00F3n\ de\ encendido/apagado\ de\ la\ lampara\n
+numComments=9
