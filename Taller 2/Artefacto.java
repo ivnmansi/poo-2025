@@ -4,7 +4,7 @@
  * Clase que representa un artefacto.
  * Cada artefacto tiene un estado (encendido o apagado) y un interruptor individual.
  */
-public class Artefacto
+public abstract class Artefacto
 {    
     /**
      * Estado del artefacto (encendido o apagado).
