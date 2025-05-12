@@ -21,6 +21,20 @@ Estructura del proyecto
 - TV.java: Implementación de un televisor con consumo de 300 watts (Hereda de Artefacto). 
 - Plancha.java: Implementación de una plancha con consumo de 1200 watts (Hereda de Artefacto).  
 
+Diferencias con Taller 1
+------------------------
+El Taller 2 expande las capacidades del Taller 1 mediante:
+
+1. Generalización y herencia: Reemplaza la clase específica Lamp2 por una clase base Artefacto, implementando un diseño orientado a objetos más robusto que permite la creación de diferentes tipos de dispositivos eléctricos.
+
+2. Variedad de artefactos: Añade múltiples tipos de artefactos (TV, Plancha, Lámpara) con distintos consumos energéticos, en lugar de solo lámparas.
+
+3. Control de consumo: Incorpora el concepto de consumo eléctrico para cada artefacto, permitiendo modelar dispositivos con diferentes potencias.
+
+4. Conectividad mejorada: Implementa métodos específicos (conectarArtefacto y desconectarArtefacto) para conectar y desconectar dispositivos del sistema general, en lugar de hacerlo automáticamente en el constructor.
+
+5. Seguimiento de dispositivos: El interruptor general ahora lleva un conteo de los artefactos conectados al sistema.
+
 Requisitos
 ----------
 - BlueJ  
@@ -35,20 +49,15 @@ Para abrir y ejecutar el proyecto:
 4. El diagrama de clases aparecerá en la interfaz de BlueJ.  
 
 Para crear instancias y probar el sistema:  
-1. Crear el interruptor general:  
-   - Haga clic derecho en la clase 'GeneralSwitch2'.  
-   - Seleccione el método estático 'getInstance()'.  
-   - Este proceso creará una instancia única del interruptor general.  
 
-2. Crear artefactos:  
+1. Crear artefactos:  
    - Haga clic derecho en las clases `Lampara`, `TV` o `Plancha`.  
    - Seleccione el constructor correspondiente (`new Lampara()`, `new TV()`, `new Plancha()`) y escriba un nombre.  
    - Repita este proceso para crear varios artefactos.  
 
-3. Conectar artefactos al interruptor general:  
-   - Haga clic derecho en una instancia de artefacto y selecciona `conectarArtefacto(GeneralSwitch2)`.  
-   - Seleccione la instancia del interruptor general creada previamente.  
+2. Conectar artefactos al interruptor general:  
+   - Haga clic derecho en una instancia de artefacto y selecciona `conectarArtefacto()`
 
-4. Controlar el sistema:  
-   - Para encender o apagar el interruptor general: Haga clic derecho en la instancia de `GeneralSwitch2` y seleccione `button()`.  
-   - Para activar o desactivar el interruptor individual de un artefacto: Haga clic derecho en la instancia del artefacto y selecciona `button()`.
+3. Controlar el sistema:  
+   - Para encender o apagar el interruptor general: Haga clic derecho en la instancia de `GeneralSwitch2` (al que se puede acceder mediante el artefacto conectado) y seleccione `button()`.   
+   - Para activar o desactivar el interruptor individual de un artefacto: Haga clic derecho en la instancia del artefacto y seleccione `button()`.

@@ -35,8 +35,8 @@ public class Artefacto
     /**
      * Metodo para conectar artefacto en el tablero general
      */
-    public void conectarArtefacto(GeneralSwitch2 newGeneralSwitch){
-        generalSwitch = newGeneralSwitch;
+    public void conectarArtefacto(){
+        generalSwitch = GeneralSwitch2.getInstance();
         generalSwitch.getLamps().add(this);
         generalSwitch.setNumArtefactos(generalSwitch.getNumArtefactos() + 1);
         if(generalSwitch.getSwitchState() && artefactoSwitch){
